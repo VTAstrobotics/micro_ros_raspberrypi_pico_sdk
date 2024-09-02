@@ -16,6 +16,8 @@ link_directories(libmicroros)
 add_executable(pico_micro_ros_example
     pico_micro_ros_example.c
     pico_uart_transport.c
+    pico_uart_transport.h
+
 )
 target_link_libraries(pico_micro_ros_example
     pico_stdlib

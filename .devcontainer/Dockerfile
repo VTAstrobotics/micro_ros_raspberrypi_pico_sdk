@@ -1,4 +1,4 @@
-FROM osrf/ros:humble-desktop-full
+FROM ros:humble-ros-base-jammy
 
 ARG USERNAME=Astrobotics
 ARG UID=1000
@@ -11,6 +11,7 @@ RUN apt update  \
     && apt upgrade  -y \
     && apt install -y --no-install-recommends \
     software-properties-common \
+    ros-humble-desktop \
     python3-pip \
     xauth \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
