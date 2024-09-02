@@ -67,7 +67,7 @@ int main()
     rclc_timer_init_default(
         &timer,
         &support,
-        RCL_MS_TO_NS(1000),
+        RCL_MS_TO_NS(50),
         timer_callback);
 
     rclc_executor_init(&executor, &support.context, 1, &allocator);
